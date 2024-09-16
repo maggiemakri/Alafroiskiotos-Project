@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>αλαφροΐσκιωτος</title>
+    <style>
+        body {
+            font-family: 'Bohemian Typewriter', Arial, sans-serif;
+            background-color: #460000;
+            color: #808a73;  
+            margin: 0;
+            padding: 0;
+        }
+        .frame {
+            border: 2px solid #fff;
+            padding: 10px;
+            margin: 10px;
+        } 
+        .content {
+            display: flex;
+            align-items: center;
+        }
+        .content img {
+            margin-right: 60px;
+            width: 150px; /* Adjust size as needed */
+            height: auto;
+        }
+        .artwork-img {
+            width: 300px; /* Adjust size as needed */
+            height: auto;
+            cursor: pointer; /* Change cursor to pointer on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="frame">
+        <h1>αλαφροΐσκιωτος</h1>
+		<h1>(alafroiskiotos)</h1>
+		<div class="content">
+		    <!-- Replace with your actual image and audio source -->
+		    <img src="image1.jpg" alt="Placeholder Image" class="content-img">
+		    <audio controls>
+                <source src="Alafroiskiotos audio clip.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <p>
+            αυτός που μπορεί να βλέπει ξωτικά, νεράιδες, φαντάσματα / the one who can see elves, fairies, ghosts</p>
+    </div>
+
+    <div id="artwork-container">
+        <img class="artwork-img" src="image1.jpg" alt="Image 1" onclick="showNextImage()">
+    </div>
+
+    <script>
+        const images = [
+            "image1.jpg", // Replace with your image URLs
+            "image2.jpg",
+            // Add more image URLs as needed
+        ];
+        let currentImageIndex = 0;
+
+        function showNextImage() {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            const imgElement = document.querySelector('.artwork-img');
+            imgElement.src = images[currentImageIndex];
+        }
+    </script>
+</body>
+</html>
+
