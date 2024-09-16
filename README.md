@@ -1,2 +1,2 @@
 # Alafroiskiotos-Project
-Artwork
+Artwork by Maggie Makri
